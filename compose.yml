@@ -1,0 +1,8 @@
+services:
+  reality:
+    container_name: reality
+    image: wulabing/xray_docker_reality
+    ports:
+      - ${REALITY_PORT}:443
+    environment:
+      - EXTERNAL_PORT=${REALITY_PORT}
